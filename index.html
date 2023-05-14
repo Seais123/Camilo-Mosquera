@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript"src="../script.js"></script>
+    <script type="text/javascript"src="../footer.js"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+    <img src ="logo.png" alt="logo">
+    </header>
+    <br>
+    <main>
+        <section class="seccion1">
+            <div class="texto_inicio">  
+                <textarea class="text_area"name="inicio" id="textoEncriptado" cols="30" rows="10" placeholder="Escribe el texto"></textarea>
+            </div>
+            <div class="Contenedor_Botones">
+                <button class="botonEncriptado"type="button"id="botonEncriptado">Encriptador</button>
+                <button class="botonDesencriptado"type="button"id="botonDesencriptado">Desencriptador</button>
+            </div>
+
+        </section>
+        <section class="seccion2">
+            <div class="contenedorimg">
+                <img src="Muñeco.png" alt="muñeco" />
+            </div>
+            <div class="contenedor_texto">
+                <textarea class="resultado"name="Resultado" id="textoDesencriptado" cols="30" rows="5" placeholder="Aqui aparece su texto encriptado"></textarea>
+            </div>
+            <div class="botoncopiar">
+                <button class="botonCopiado"type="button"id="botonCopiado">Copiar</button>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer id="derechosjs">
+        <p class="derechos">Desarrollado por: Camilo Mosquera</p>
+    </footer>
+</body>
+<script>
+    var btn=document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2=document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3=document.querySelector("#botonCopiado");
+    btn3.onclick = copiar;
+</script>
+</html>
